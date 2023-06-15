@@ -1,0 +1,395 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+@font-face {
+    font-family:'lato';
+    src:url('/font/Lato-Regular.ttf') format('truetype')
+}
+body{
+    font-family: 'lato';
+    color: rgb(56, 51, 51);
+}
+/* ************partie home************** */
+header{
+    background-image: url("img/parallax1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60vh;
+    background-position: bottom;
+}
+header h1{
+    text-align: center;
+    padding-top: 30vh;
+   /* position: absolute;
+   top: 30vh;
+   left: 40%;*/
+  
+   color: aliceblue;
+   /* padding: 10px; */
+     letter-spacing: 2px; 
+    
+}
+header h1 span{
+    background-color: black;
+   padding: 15px;
+}
+/* header nav{
+    border: solid;
+} */
+header nav ul{
+    display: flex;
+    width: 100%;
+    position: fixed;
+   
+    
+
+}
+header nav ul p{
+  margin-left: 65%;
+padding: 10px;
+}
+header nav ul li{
+ display: inline-block;
+ width: 8%;
+ position: relative;
+
+ margin:10px;
+}
+header .marge{
+    width: 6%;
+}
+header .marge1 {
+    width: 4%;
+}
+
+
+/* *************  partie aboutme**************** */
+.aboutme{
+    text-align: center;
+    width: 60%;
+    margin: 50px auto;
+}
+.aboutme .text{
+    text-align: start;
+}
+.aboutme .text, .aboutme .photo{
+    padding: 25px;
+    line-height: 1.5em;
+}
+
+/* ***************partie myname**************** */
+.myname{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.myname .picture, .myname .text{
+    width: 45%;
+}
+.myname .progress{
+    width: 100%;
+}
+.myname .picture img{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.myname .picture p{
+    text-align: center;
+}
+.myname .text p {
+    line-height: 1.5em;
+}
+.progress{
+    padding: 20px;
+}
+.progress .message{
+    text-align: center;
+}
+.progress .info{
+    letter-spacing: 10px;
+    margin: 15px 0;
+} 
+.progressbar{ color: white;
+    width: 80%;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(188, 197, 204);
+}
+.progressbar .bar{
+    width: 90%;
+    height: 20px;
+    background-color: rgb(72, 70, 70);
+}
+.progressbar .bar2 {
+    width: 85%;
+    height: 20px;
+    background-color: rgb(72, 70, 70);
+}
+.progressbar .bar3 {
+    width: 75%;
+    height: 20px;
+    background-color: rgb(72, 70, 70);
+}
+/* stat********* */
+.statique{
+    border: solid black;
+    text-align: center;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: rgb(72, 70, 70);
+    color: aliceblue;
+}
+.statique .info{
+    width: 24%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+/* ********portfolio************** */
+.portfolio{
+    background-image: url("img/parallax2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 30vh;
+        background-position: top;
+        text-align: center;
+        
+        color: aliceblue;
+        letter-spacing: 10px;
+}
+.portfolio h1{
+    padding-top: 15vh;
+}
+/* ***********mywork************* */
+.mywork{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+}
+.mywork .picture{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.mywork .picture img{
+    width: 23%;
+    margin-bottom: 20px;
+}
+.mywork p{
+    padding-bottom: 10px;
+}
+ .mywork h1 {
+     padding-bottom: 30px;
+ }
+.mywork p a{
+background-color: rgb(219, 211, 211);
+color: rgb(34, 33, 33);
+padding: 5px 10px;
+}
+/* ******************contact*************** */
+.contact {
+    background-image: url("img/parallax3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 30vh;
+    background-position: top;
+    text-align: center;
+
+    color: aliceblue;
+    letter-spacing: 10px;
+}
+.contact h1 {
+    padding-top: 15vh;
+}
+
+/* ********************work**************** */
+.work {
+    text-align: center;
+    margin-top: 50px;
+    width: 60%;
+    margin: auto;
+}
+.work .information{
+    display: flex;
+    width: 100%;
+}
+.work .information .picture{
+    width: 30%;
+}
+.work .information .picture img {
+    width: 100%;
+    padding: 5px 10px 0 50px;
+    box-sizing: border-box;
+}
+.work .information .formulaire {
+    width: 65%;
+    text-align:start;
+ 
+    padding: 20px;
+    line-height: 1.5em;
+}
+.work p,.work h1{
+    margin: 40px;
+}
+.work .information .formulaire p{
+margin: 0;
+}
+.work .information .formulaire form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.work .information .formulaire form .info{
+    width: 48%;
+}
+.work .information .formulaire form .message {
+    margin-top: 10px;
+    width: 100%;
+}
+.work .information .formulaire form button {
+    width: 25%;
+    
+    margin:10px 0 0 75%;
+    background-color: black;
+    color: aliceblue;
+}
